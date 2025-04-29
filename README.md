@@ -24,7 +24,7 @@ yarnlock_parse(Path('yarn.lock').read_text())
 # ->
 # {
 #     '@babel/cli': {
-#         'matches': ['^7.24.8'],
+#         '^7.24.8': {
 #         'dependencies': {
 #             'glob': '^7.2.0',
 #             'slash': '^2.0.0',
@@ -41,6 +41,7 @@ yarnlock_parse(Path('yarn.lock').read_text())
 #         'version': '7.24.8',
 #         'resolved': 'https://registry.npmjs.org/@babel/cli/-/cli-7.24.8.tgz',
 #         'integrity': 'sha512-isdp+G6DpRyKc+3Gqxy2rjzgF7Zj9K0mzLNnxz+E/fgeag8qT3vVulX4gY9dGO1q0y+0lUv6V3a+uhUzMzrwXg==',
+#       },
 #     },
 #     ...
 # }
